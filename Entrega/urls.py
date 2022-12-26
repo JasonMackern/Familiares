@@ -16,9 +16,10 @@ Including another URLconf
 from django.contrib import admin
 from django.urls import path, include
 
-from Entrega.views import saludo, Template
+from Entrega.views import saludo, Template, index
 
 urlpatterns = [
+    path("", index, name="index"),
     path('admin/', admin.site.urls),
     path("saludo/", saludo),
     path("template/", Template),
