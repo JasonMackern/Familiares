@@ -4,7 +4,7 @@ from django.http import HttpResponse
 from Familiares.models import Familiares
 
 def Familiar (request):
-    familiares = Familiares.objects.create (Nombres = "Laura Beatris", Apellido = "Corridoni", Con_Vida = False, Hijos = 6 )
+    familiares = Familiares.objects.create (Nombres = "Ayelen Johanna", Apellido = "Mackern", Con_Vida = True, Hijos = 0 )
     print(familiares)
     return HttpResponse("Mi familia es:")
 
